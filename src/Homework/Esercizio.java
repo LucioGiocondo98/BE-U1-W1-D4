@@ -16,5 +16,16 @@ public class Esercizio {
                 System.out.println("Stipendio: " + d.calculateSalary());
             }
         }
+        CheckIn[] presentiOggi={
+                new DipendenteFullTime("001", new Dipartimento[]{Dipartimento.PRODUZIONE}, 1800.00),
+                new DipendentePartTime("002", new Dipartimento[]{Dipartimento.VENDITE}, 88, 12.0),
+                new Dirigente("003", new Dipartimento[]{Dipartimento.AMMINISTRAZIONE}, 5000.00, 1000.00),
+                new Volontario("Luca", 25, "Studente di economia"),
+                new Volontario("Giulia", 30, "Ex manager HR")
+        };
+
+        for (CheckIn c : presentiOggi) {
+            c.checkIn();
+        }
+        }
     }
-}

@@ -1,6 +1,6 @@
 package Homework;
 
-public abstract class Dipendente {
+public abstract class Dipendente implements CheckIn {
     private String matricola;
     //private double stipendio;
     private Dipartimento [] dipartimenti;
@@ -28,4 +28,9 @@ public abstract class Dipendente {
         this.dipartimenti = nuovidipartimenti;
     }
     public abstract double calculateSalary();
+
+    @Override
+    public void checkIn() {
+        System.out.println("Dipendente con matricola" + matricola + "ha fatto check-in");
+    }
 }
