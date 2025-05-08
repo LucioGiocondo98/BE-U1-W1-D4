@@ -1,3 +1,5 @@
+package Homework;
+
 public class Dirigente extends Dipendente {
     private double stipendioMensile;
     private double bonus;

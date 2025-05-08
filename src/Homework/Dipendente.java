@@ -1,3 +1,5 @@
+package Homework;
+
 public abstract class Dipendente {
     private String matricola;
     //private double stipendio;

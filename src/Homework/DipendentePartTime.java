@@ -1,3 +1,5 @@
+package Homework;
+
 public class DipendentePartTime extends Dipendente {
     private int oreLavorative;
     private double pagaOraria;

@@ -1,3 +1,5 @@
+package Homework;
+
 public class DipendenteFullTime extends Dipendente {
 private double stipendioMensile;
 
