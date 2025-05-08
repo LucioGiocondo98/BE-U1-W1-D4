@@ -3,13 +3,9 @@ package Homework;
 public abstract class Dipendente {
     private String matricola;
     //private double stipendio;
-    private String [] dipartimenti;
+    private Dipartimento [] dipartimenti;
 
-    public static final String PRODUZIONE = "PRODUZIONE";
-    public static final String AMMINISTRAZIONE = "AMMINISTRAZIONE";
-    public static final String VENDITE = "VENDITE";
-
-    public Dipendente(/*double stipendio,*/ String matricola, String[] dipartimenti) {
+    public Dipendente(/*double stipendio,*/ String matricola, Dipartimento[] dipartimenti) {
        // this.stipendio = stipendio;
         this.matricola = matricola;
         this.dipartimenti = dipartimenti;
@@ -24,11 +20,11 @@ public abstract class Dipendente {
      //   return stipendio;
   //  }
 
-    public String[] getDipartimenti() {
+    public Dipartimento[] getDipartimenti() {
         return dipartimenti;
     }
 
-    public void setDipartimenti(String[] nuovidipartimenti) {
+    public void setDipartimenti(Dipartimento[] nuovidipartimenti) {
         this.dipartimenti = nuovidipartimenti;
     }
     public abstract double calculateSalary();
